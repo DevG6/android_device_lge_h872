@@ -1,12 +1,14 @@
 $(call inherit-product, device/lge/h872/full_h872.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/common.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_NAME := rr_h872
+PRODUCT_NAME := aosp_h872
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="g6" \
