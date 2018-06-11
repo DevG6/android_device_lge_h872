@@ -3,7 +3,7 @@ $(call inherit-product, device/lge/h872/full_h872.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/aosp/common.mk)
 
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
