@@ -16,4 +16,4 @@
 
 LOCAL_PATH := device/lge/h872/
 
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/aosp_h872.mk
+PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_h872.mk
