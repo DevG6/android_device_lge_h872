@@ -20,6 +20,7 @@ DEVICE_PATH := device/lge/h872
 -include device/lge/g6-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := g6,lucye,h872
+TARGET_SYSTEM_PARTITION := /dev/sda16
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_h872_defconfig
