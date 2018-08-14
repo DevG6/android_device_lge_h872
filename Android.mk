@@ -13,10 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-#ifneq ($(filter lucye,$(TARGET_DEVICE)),)
 
-LOCAL_PATH := device/lge/h872/
+LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter h872,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
-
-#endif
+endif
